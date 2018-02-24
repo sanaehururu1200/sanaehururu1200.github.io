@@ -1,0 +1,88 @@
+@keyframes bootstrap_cube {
+  to {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+body {
+  image-rendering: pixelated;
+}
+div.stage {
+  position: relative;
+  top: 100px;
+  -webkit-perspective: 500;
+  -moz-perspective:500;
+  -o-perspective:500;
+  -ms-perspective:500;
+}
+div.stage div.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: all 1s;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: bootstrap_cube;
+}
+div.stage div.cube div {
+  width: 200px;
+  height: 200px;
+  /* border: 2px solid #999; */
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 198px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+div.stage div.cube div.front {
+  background-image: url('./tnt_side.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  top: 0;
+  left: 0;
+  transform: translateZ(100px);
+}
+div.stage div.cube div.back {
+  background-image: url('./tnt_side.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  top: 0;
+  left: 0;
+  transform: translateZ(-100px);
+}
+div.stage div.cube div.left {
+  background-image: url('./tnt_side.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  top: 0;
+  left: 100px;
+  transform: rotateY(90deg);
+}
+div.stage div.cube div.right {
+  background-image: url('./tnt_side.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  top: 0;
+  right: 100px;
+  transform: rotateY(-90deg);
+}
+div.stage div.cube div.top {
+  background-image: url('./tnt_bottom.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  top: 100px;
+  left: 0;
+  transform: rotateX(90deg);
+}
+div.stage div.cube div.bottom {
+  background-image: url('./tnt_top.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  bottom: 100px;
+  left: 0;
+  transform: rotateX(-90deg);
+}
+

@@ -1,6 +1,6 @@
 @keyframes bootstrap_cube {
   to {
-    transform: rotateX(720deg) rotateY(720deg);
+    transform: rotateX(720deg) rotateY(1200deg);
   }
 }
 

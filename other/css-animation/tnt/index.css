@@ -1,12 +1,9 @@
-@keyframes bootstrap_cube {
+@keyframes cube {
   to {
     transform: rotateX(720deg) rotateY(1200deg);
   }
 }
 
-body {
-  image-rendering: pixelated;
-}
 div.stage {
   position: relative;
   top: 100px;
@@ -14,6 +11,7 @@ div.stage {
   -moz-perspective:500;
   -o-perspective:500;
   -ms-perspective:500;
+  image-rendering: pixelated;
 }
 div.stage div.cube {
   width: 200px;
@@ -25,7 +23,7 @@ div.stage div.cube {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-name: bootstrap_cube;
+  animation-name: cube;
 }
 div.stage div.cube div {
   width: 200px;

@@ -1,0 +1,49 @@
+body { 
+  background-image: url('./bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.card {
+  margin: 5% auto;
+  width: 40%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+}
+.card-img {
+  margin: 5% 5% auto;
+  border-radius: 5px 5px 5px 5px;
+  width: 50%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+.card-link a {
+  text-decoration: none;
+  color: rgb(125, 221, 0);
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: rgb(120, 255, 0);
+}
